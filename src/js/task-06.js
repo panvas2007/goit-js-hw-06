@@ -8,6 +8,7 @@ function onInputChangeBorderColor(event) {
   if (
     event.currentTarget.value.trim().length === Number(inputEl.dataset.length)
   ) {
+    inputEl.classList.remove("invalid");
     inputEl.classList.add("valid");
   } else inputEl.classList.add("invalid");
 }
